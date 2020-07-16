@@ -16,3 +16,7 @@ Areas to improve:
 2. Research tips on resizing images when making them responsive. 
 3. Research pseudo elements ::before and ::after, as I'm unsure of when they're beneficial to use.
 4. Research how to make an overlay using javascript. 
+
+Website can be found here:
+https://easybank-frontendmentor-five.vercel.app 
+https://jakealistairwood.github.io/easybank_frontendmentor/. (Images aren't working for some reason - possibly due to ownership).
