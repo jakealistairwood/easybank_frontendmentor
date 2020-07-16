@@ -19,4 +19,5 @@ Areas to improve:
 
 Website can be found here:
 https://easybank-frontendmentor-five.vercel.app 
+
 https://jakealistairwood.github.io/easybank_frontendmentor/. (Images aren't working for some reason - possibly due to ownership).
