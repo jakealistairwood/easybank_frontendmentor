@@ -39,6 +39,9 @@ p {
     font-size: .75rem;
     cursor: pointer;
 }
+.btn:hover {
+    background-image: linear-gradient(to right, rgba(60, 206, 103, 0.8), rgb(64, 182, 199, 0.8));
+}
 h1 {
     color: var(--dark-blue);
 }
@@ -111,6 +114,9 @@ header {
     top: -10%;
     left: 61%;
     width: 65%;
+}
+.hero-mobile {
+    display: none;
 }
 .hero-content {
     height: fit-content;
@@ -307,7 +313,7 @@ header {
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin-top: 30%;
+        top: 10vh;
         border-radius: 8px;
         background-color: #FFF;
         width: 80%;
@@ -327,6 +333,7 @@ header {
     .navbar li a {
         color: var(--dark-blue);
         font-size: .8rem;
+        height: 30px;
     }
     .navbar-active {
         transform: translateX(0);
@@ -337,63 +344,61 @@ header {
     }
     /* HERO SECTION */
     #hero {
-        height: 140vh;
+        height: 160vh;
     }
     .hero-container {
         display: flex;
+        height: 140vh;
+        width: 100%;
         flex-direction: column-reverse;
     }
-    .hero-content {
-        display: flex;
+    .hero-container .hero-content {
+        display: block;
         position: absolute;
-        top: 50%;
-        flex: 1;
-        height: 50%;
         width: 100%;
-        padding-top: 200px;
-        margin-bottom: 40%;
+        height: auto;
+    }
+    .hero-content {
+        position: absolute;
+        display: flex;
         flex-direction: column;
-        text-align: center;
+        justify-content: center;
         align-items: center;
-        justify-content: space-between;
+        text-align: center;
     }
     .hero-img {
-        position: absolute;
         top: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 50%;
-        width: 100%;
-    }
-    .hero-img .hero-bg {
-        position: absolute;
-        top: 0;
-        left: 0;
         width: 100%;
     }
     .hero-bg {
+        display: none;
+    }
+    .hero-mobile {
+        display: flex;
         position: absolute;
-        left: 0;
-        top: -25%;
+        top: -15vh;
         height: auto;
-        width: auto;
+        width: 100vw;
         max-width: 100%;
     }
     .hero-img .hero-demo {
-        position: relative;
-        top: 0;
+        position: absolute;
+        top: -22%;
         left: 0;
         width: 100%;
+        max-width: 100%;
     }
     .hero-demo {
+        display: flex;
         position: absolute;
-        left: 0;
-        top: 0;
-        width: auto;
-        height: 100vh;
+        height: auto;
+        width: 100%;
         max-width: 100%;
+        z-index: 3;
     }
     /* FEATURES SECTION */
     .features-container {
