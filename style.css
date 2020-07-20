@@ -332,8 +332,10 @@ header {
     }
     .navbar li a {
         color: var(--dark-blue);
-        font-size: .8rem;
-        height: 30px;
+        font-size: 1.2rem;
+        height: 60px;
+        display: flex;
+        align-items: center;
     }
     .navbar-active {
         transform: translateX(0);
@@ -347,58 +349,53 @@ header {
         height: 160vh;
     }
     .hero-container {
-        display: flex;
-        height: 140vh;
+        height: auto;
         width: 100%;
+        display: flex;
         flex-direction: column-reverse;
+    } */
+    .hero-container .hero-img {
+        width: 100%;
+    }
+    .hero-container .hero-bg {
+        display: none;
+    }
+    .hero-img {
+        background-image: url("images/bg-intro-mobile.svg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+    }
+    .hero-img .hero-demo {
+        top: -17%;
+        left: 0;
+        width: 100%;
+        height: 60%;
+    }
+    .hero-demo {
+        object-fit: cover;
     }
     .hero-container .hero-content {
-        display: block;
-        position: absolute;
+        height: 100%;
         width: 100%;
-        height: auto;
-    }
-    .hero-content {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        display: block;
         align-items: center;
         text-align: center;
     }
-    .hero-img {
+    .main-heading {
+        font-size: 4rem;
+        position: relative;
         top: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
+        padding-bottom: 15px;
     }
-    .hero-bg {
-        display: none;
+    .hero-info {
+        padding-bottom: 15px;
     }
-    .hero-mobile {
-        display: flex;
-        position: absolute;
-        top: -15vh;
-        height: auto;
-        width: 100vw;
-        max-width: 100%;
-    }
-    .hero-img .hero-demo {
-        position: absolute;
-        top: -22%;
-        left: 0;
-        width: 100%;
-        max-width: 100%;
-    }
-    .hero-demo {
-        display: flex;
-        position: absolute;
-        height: auto;
-        width: 100%;
-        max-width: 100%;
-        z-index: 3;
+    .btn-hero {
+        padding: 20px 40px;
+        font-size: .9rem;
     }
     /* FEATURES SECTION */
     .features-container {
