@@ -396,6 +396,7 @@ header {
     .btn-hero {
         padding: 20px 40px;
         font-size: .9rem;
+        margin-bottom: 60px;
     }
     /* FEATURES SECTION */
     .features-container {
